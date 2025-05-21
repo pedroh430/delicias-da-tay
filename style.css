@@ -5,6 +5,7 @@ body{
      z-index:1 ;
 
 }
+
 .fundo{
     position: fixed;
     top: 0;
@@ -162,6 +163,53 @@ p{
     border: 10px;
     border-radius: 10px;
     background-color: #ff63b44d;
+}
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .bloco1,
+  .bloco2,
+  .bloco3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto1,
+  .foto2,
+  .foto3,
+  .foto4 {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
 
 
