@@ -31,14 +31,20 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-    
-    
+  
+}
+a{
+  border-style:solid;
+  border-top: 10px;
+  border-left: 20px;
+  border-color: #ff63b4;
+  font-size: larger;
+  
 }
 .navbar a{
     text-decoration: none;
-    color:#000000;
-   
+    color:#282525;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 25px;
     
 }
@@ -54,8 +60,8 @@ body{
     align-items: center;
     border-radius: 10px;
     border-style: solid;
-    border-color:  #ff63b44d;
-    background-color:  #ff63b451;  
+    border-color:  #ff63b412;
+    background-color:  #ff63b41d;  
    
 
 }
@@ -65,14 +71,16 @@ h1{
     display: center;
     justify-content: center;
     color: rgb(0, 0, 0);
+    font-family:fantasy;
+    font-size: 55px;
+    font-weight: 150px;
 
-    
-    padding: 10px 20px;   
+      
 }
 #titulo{
     
     justify-content: center;
-    background-color:  #ff63b44d;
+    background-color:  #da67a28d;
     border-radius: 10px;
     border-width: 2px;
     
@@ -87,40 +95,8 @@ img{
 
 }
 
-    
-.foto1{
-    width: 250px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 3px 3px 8px  #f5f5f5;
-    background-color: #ffffff;
-    margin: 10px;}
 
-.foto2{
-   width: 250px;
-   border: 2px solid #ffffff;
-   border-radius: 10px;
-   padding: 15px;
-   text-align: center;
-   box-shadow: 3px 3px 8px  #ffffff;
-   background-color: #ffffff;
-   
-   margin: 10px;
-
-}
-.foto3{
-    width: 250px;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 3px 3px 8px  #ffffff;
-  background-color: #ffffff;
-  margin: 10px;
-}
-.foto4{
+.produto{
   width: 250px;
   border: 2px solid #ffffff;
   border-radius: 10px;
@@ -128,19 +104,22 @@ img{
   text-align: center;
   box-shadow: 3px 3px 8px  #ffffff;
   background-color: #ffffff;
-  margin: 10px;
+  margin: 30px;
+  transition: trasnform 0.3s ease-in-out;
+
 }
 .bloco1{
     display: flex;
     justify-content: center;
     background-color:  #ff63b44d;
     border-radius: 10px;
+    
 }
 .bloco2{
     display: flex;
     justify-content: center;
     background-color:  #ff63b44d;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
 .bloco3{
@@ -155,15 +134,58 @@ h2{
     font-size: 20px;
     border: 10px;
     border-radius: 10px;
-    background-color: #ff63b44d;
+    background-color: #ff63b4ad;
 
 }
+
+
 p{
     text-align: center;  
     border: 10px;
     border-radius: 10px;
-    background-color: #ff63b44d;
+    background-color: #ff63b4;
+    word-break:break-all;
+    
 }
+.icone-carrinho {
+      position: relative;
+      font-size: 24px;
+      color: #333;
+      text-decoration: none;
+    }
+    #quantidade-carrinho {
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; display: flex; justify-content: space-between; align-items: center; }
+    button { background-color: crimson; color: white; border: none; padding: 4px 8px; border-radius: 5px; cursor: pointer; }
+  
+#produto1,#produto2,#produto3{
+  display: flex;
+}
+
+
+
+.adicionar{
+  border: 10px;
+  background-color: #ce95b2;
+  border-radius: 10px;
+  font-size: 18px;
+
+}
+.adicionar:hover{
+    background-color: #ff63b4;
+  
+}
+
+
 /* Responsividade para telas menores (celulares) */
 @media (max-width: 768px) {
 
@@ -172,7 +194,7 @@ p{
   }
 
   .navbar {
-    flex-direction: column;
+    display: flexbox;
   }
 
   .navbar li {
