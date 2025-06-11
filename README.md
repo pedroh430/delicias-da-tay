@@ -9,7 +9,7 @@
    - contem todas ad imagens utilizadas
 
 - js/ script.js
-   - contem toda a logica do carrinho, acessando os items e enviando para [salvar_pedidos.php](./salvar_pedidos.php)
+   - contem toda a logica do carrinho, acessando os items e enviando para salvar_pedidos.php
 
 - conexao.php 
    - faz a conexão com o banco de dados mysql
